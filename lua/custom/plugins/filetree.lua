@@ -1,6 +1,9 @@
 -- File: lua/custom/plugins/filetree.lua
 
 return {
+  -- Keybinds for Neotree
+  vim.keymap.set('n', '<leader>b', '<Cmd>Neotree float toggle<CR>', { desc = 'Toggle Neotree pane [B]' }),
+
   'nvim-neo-tree/neo-tree.nvim',
   version = '*',
   dependencies = {
