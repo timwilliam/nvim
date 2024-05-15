@@ -82,8 +82,15 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next [D]iagn
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Show diagnostic [E]rror messages' })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
+-- NOTE: timwilliam custom remap [START]
+
+-- Gitsigns keymaps
+vim.keymap.set('n', '<leader>gh', ':Gitsigns preview_hunk<CR>', { desc = 'Gitsigns preview [H]unk' })
+
 -- Neotree keymaps
 vim.keymap.set('n', '<leader>b', '<Cmd>Neotree float toggle<CR>', { desc = 'Toggle Neotree pane [B]' })
+
+-- NOTE: timwilliam custom remap [END]
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
