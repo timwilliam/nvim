@@ -90,6 +90,11 @@ vim.keymap.set('n', '<leader>gh', ':Gitsigns preview_hunk<CR>', { desc = 'Gitsig
 -- Neotree keymaps
 vim.keymap.set('n', '<leader>b', '<Cmd>Neotree float toggle<CR>', { desc = 'Toggle Neotree pane [B]' })
 
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+
 -- NOTE: timwilliam custom remap [END]
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
